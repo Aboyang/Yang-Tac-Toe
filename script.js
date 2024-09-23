@@ -37,6 +37,7 @@ const cellO_22 = document.getElementById("cellO_22")
 const winX = document.getElementById("winX")
 const winO = document.getElementById("winO")
 const tie = document.getElementById("tie")
+const blocker = document.getElementById("blocker")
 
 const scoreboardX = document.getElementById("scoreboardX")
 const scoreboardO = document.getElementById("scoreboardO")
@@ -220,9 +221,6 @@ function check() {
         win = true
     }
 
-    console.log(count)
-    console.log(win)
-
     //check for tie
     if (count == 8 && !win) {
         tie.classList.add('active')
@@ -231,6 +229,8 @@ function check() {
     
     if (win) {
         
+        blocker.style.zIndex = 2
+
         setTimeout(displayWin, 600)
 
         setTimeout(refresh, 3000)
@@ -280,6 +280,9 @@ function refresh() {
 }
 
 function displayWin() {
+
+    blocker.style.zIndex = 0
+    
     if ((count - 1)%2 == 0) {
         winX.classList.add('active') //to perform the transformation
         scoreX += 1

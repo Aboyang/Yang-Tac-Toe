@@ -27,6 +27,19 @@
     width: 40vw;
 }
 
+.blocker {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    position: absolute;
+    z-index: 0;
+
+    height: 40vw;
+    width: 40vw;
+    background-color: transparent;
+}
+
 .cell {
     display: flex;
     position: relative;
@@ -228,7 +241,7 @@ p {
 
 @media screen and (max-width: 800px) {
 
-    .board, .winX, .winO, .tie {
+    .board, .winX, .winO, .tie, .blocker {
         width: 60vw;
         height: 60vw;
     }
