@@ -87,12 +87,12 @@
 
 .shapeX {
     display: block;
-    font-size: 120px;
+    font-size: 60px;
 }
  
 .shapeO {
     display: block;
-    font-size: 90px;
+    font-size: 50px;
 }
 
 .winX {
@@ -219,7 +219,7 @@
 
 
 p {
-    font-size: 50px;
+    font-size: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
@@ -237,12 +237,15 @@ p {
         top: 100px;
         width: 10vw;
         height: 10vw;
+        font-size: 25px;
     }
 
     .scoreboardO {
         bottom: 100px;
         width: 10vw;
         height: 10vw;
+        font-size: 25px;
     }
+
     
 }
