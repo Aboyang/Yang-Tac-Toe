@@ -38,9 +38,8 @@
     border: 3pt solid black;
     box-sizing: border-box;
 
-    height: 33.33%;
-    width: 33.33%;
-    margin-bottom: -5px;
+    height: calc(100%/3);
+    width: calc(100%/3);
     background-color: rgb(255, 255, 255);
 }
 
