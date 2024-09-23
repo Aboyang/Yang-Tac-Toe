@@ -43,6 +43,7 @@ const scoreboardX = document.getElementById("scoreboardX")
 const scoreboardO = document.getElementById("scoreboardO")
 
 let count = 0
+let game = 0
 let scoreX = 0
 let scoreO = 0
 let board = []
@@ -271,18 +272,23 @@ function refresh() {
     }
 
 
-    count = 0
-    board = []
+    if (game%2 == 0) {
+        count = 1
+    } else {
+        count = 0
+    }
 
     for (let i=0; i<3; i++) {
         board[i] = ["","",""]
     }
+
+    game +=1
 }
 
 function displayWin() {
 
     blocker.style.zIndex = 0
-    
+
     if ((count - 1)%2 == 0) {
         winX.classList.add('active') //to perform the transformation
         scoreX += 1
