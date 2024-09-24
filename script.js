@@ -223,7 +223,7 @@ function check() {
     }
 
     //check for tie
-    if (count == 8 && !win) {
+    if (count == 9 && !win) {
         tie.classList.add('active')
         setTimeout(refresh, 1500)
     }
