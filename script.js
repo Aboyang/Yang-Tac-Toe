@@ -261,7 +261,7 @@ function refresh() {
     cellO_22.style.zIndex = 0
     cellX_22.style.zIndex = 0
 
-    if (count == 8 && !win) {
+    if (count == 9 && !win) {
         tie.classList.remove('active')
     }
 
